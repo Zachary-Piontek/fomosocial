@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    background-color: #621708;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    margin-right: 1rem;
+    color: whitesmoke;
+}
+
+.links li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.links li a:hover {
+    color: #F6AA1C;
+}

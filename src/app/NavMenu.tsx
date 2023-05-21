@@ -6,7 +6,7 @@ export default function NavMenu() {
     return (
         <nav className={styles.nav}>
             <Link href={'/'}>
-                <Image src="/favicon.ico" alt="logo" width={50} height={50} />
+                <Image src="/chasing-bitcoin-min.png" alt="logo" width={50} height={50} />
             </Link>
             <ul className={styles.links}>
                 <li>
