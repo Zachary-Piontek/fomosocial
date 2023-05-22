@@ -5,6 +5,7 @@ export default async function Blog() {
     res.json()
   );
   return (
+    <main>
     <div>
       <h1>Welcome to our Blog</h1>
       <ul>
@@ -15,5 +16,6 @@ export default async function Blog() {
         ))}
       </ul>
     </div>
+    </main>
   );
 }
