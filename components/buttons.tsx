@@ -15,12 +15,14 @@ export function SignInButton() {
   if (status === 'authenticated') {
     return (
       <Link href={`/dashboard`}>
+        <div className='user-icon'>
         <Image
           src={session.user?.image ?? '/favicon.ico'}
-          width={32}
-          height={32}
+          width={50}
+          height={50}
           alt="Your Name"
         />
+        </div>
       </Link>
     );
   }

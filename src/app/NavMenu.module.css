@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    background-color: #621708;
+    background-color: #941B0C;
     height: 70px;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,13 @@
     color: whitesmoke;
 }
 
+.links ul {
+    max-height: 70px;
+}
+
 .links li a {
     color: whitesmoke;
     text-decoration: none;
-    padding: 0.5rem;
 }
 
 .links li a:hover {
