@@ -7,9 +7,8 @@ generator client {
 
 datasource db {
   provider          = "postgresql"
-  url               = env("POSTGRES_PRISMA_URL")
-  directUrl         = env("POSTGRES_URL_NON_POOLING")
-  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING")
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
 model Account {
@@ -48,18 +47,7 @@ model User {
   age           Int?
   bio           String?
   accounts      Account[]
-  following     Follows[] @relation("follower")
-  followedBy    Follows[] @relation("following")
   sessions      Session[]
-}
-
-model Follows {
-  followerId  String
-  followingId String
-  follower    User   @relation("follower", fields: [followerId], references: [id])
-  following   User   @relation("following", fields: [followingId], references: [id])
-
-  @@id([followerId, followingId])
 }
 
 model VerificationToken {
