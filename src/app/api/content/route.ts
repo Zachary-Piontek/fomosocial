@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { getServerSession } from 'next-auth';
 
 const posts = [
   {
@@ -34,5 +35,8 @@ const posts = [
 ];
 
 export async function GET() {
+
+  const session = await getServerSession();
+
   return NextResponse.json(posts);
 }
