@@ -1,0 +1,22 @@
+.card {
+    background-color: whitesmoke;
+    padding: 0;
+    width: 150px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+
+  .cardImage {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  .cardContent {
+    padding: 0 0.5rem;
+  }
