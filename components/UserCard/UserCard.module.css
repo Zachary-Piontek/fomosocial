@@ -1,7 +1,8 @@
 .card {
-    background-color: whitesmoke;
+    background-color: #F6AA1C;
     padding: 0;
     width: 150px;
+    border: 1px solid #941B0C;
   }
   
   .card h3 {
