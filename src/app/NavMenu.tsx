@@ -10,6 +10,7 @@ export default function NavMenu() {
             <Link href={'/'}>
                 <Image src="/chasing-bitcoin-min.png" alt="logo" width={50} height={50} />
             </Link>
+                <h1>FOMO Social</h1>
             <ul className={styles.links}>
                 <li>
                     <Link href="/about">About</Link>
