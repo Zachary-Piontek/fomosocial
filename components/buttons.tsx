@@ -3,6 +3,7 @@
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from './buttons.module.css';
 
 export function SignInButton() {
   const { data: session, status } = useSession();
@@ -15,14 +16,13 @@ export function SignInButton() {
   if (status === 'authenticated') {
     return (
       <Link href={`/dashboard`}>
-        <div className='user-icon'>
         <Image
+          className={styles.avatar}
           src={session.user?.image ?? '/favicon.ico'}
           width={50}
           height={50}
           alt="Your Name"
         />
-        </div>
       </Link>
     );
   }

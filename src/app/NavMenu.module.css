@@ -1,6 +1,6 @@
 .nav {
     display: flex;
-    background-color: #941B0C;
+    background-color: #220901;
     height: 70px;
     justify-content: space-between;
     align-items: center;
@@ -12,10 +12,15 @@
     display: flex;
     margin-right: 1rem;
     color: whitesmoke;
+    align-items: center;
 }
 
 .links ul {
     max-height: 70px;
+}
+
+.links li {
+    padding: 0 1rem;
 }
 
 .links li a {
