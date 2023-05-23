@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 
 
 export default async function Users() {
+    // throw new Error("Oops!"); testing error page
     const users = await prisma.user.findMany();
 
     return (
