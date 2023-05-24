@@ -3,6 +3,7 @@ import styles from "./NavMenu.module.css";
 import Image from "next/image";
 import { SignInButton, SignOutButton } from "../../components/buttons";
 import AuthCheck from "../../components/AuthCheck";
+import DarkModeButton from "../../components/DarkModeButton";
 
 export default function NavMenu() {
   return (
@@ -33,6 +34,9 @@ export default function NavMenu() {
           <AuthCheck>
             <SignOutButton />
           </AuthCheck>
+        </li>
+        <li>
+          <DarkModeButton />
         </li>
       </ul>
     </nav>

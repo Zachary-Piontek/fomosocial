@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <AuthProvider>
       <html lang="en">
-        <Providers enableSystem={true} attribute="class">
+        <Providers>
           <body className={inter.className}>
             <NavMenu />
             {children}
