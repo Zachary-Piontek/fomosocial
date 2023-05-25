@@ -1,6 +1,7 @@
 import { prisma } from "../../../../lib/prisma";
 import { Metadata } from "next";
 import Image from "next/image";
+import styles from "./page.module.css";
 
 interface Props {
   params: {
@@ -30,7 +31,7 @@ export default async function UserProfile({ params }: Props) {
 
   return (
     <main>
-      <div>
+      <div className={styles.page}>
         <h1>{name}</h1>
         <Image
           src={image ?? "/favicon.ico"}

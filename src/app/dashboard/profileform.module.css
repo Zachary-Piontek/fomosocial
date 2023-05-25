@@ -1,0 +1,15 @@
+.profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+    background-color: #F6AA1C;
+    border: 5px solid #621708;
+    border-radius: .5rem;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}

@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <AuthProvider>
       <html lang="en">
-        <Providers>
-          <body className={inter.className}>
+        <body className={inter.className}>
+          <Providers>
             <NavMenu />
             {children}
-          </body>
-        </Providers>
+          </Providers>
+        </body>
       </html>
     </AuthProvider>
   );

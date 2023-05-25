@@ -1,0 +1,8 @@
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #F6AA1C;
+    border: 5px solid #621708;
+    border-radius: .5rem;
+    justify-items: center;
+}

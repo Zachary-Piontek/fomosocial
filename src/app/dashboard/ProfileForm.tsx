@@ -1,4 +1,5 @@
 "use client";
+import styles from "./profileform.module.css";
 
 export function ProfileForm({ user }: any) {
   const updateUser = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -26,9 +27,9 @@ export function ProfileForm({ user }: any) {
 
   return (
     <main>
-      <div>
+      <div className={styles.profile}>
         <h2>Edit Your Profile</h2>
-        <form onSubmit={updateUser}>
+        <form onSubmit={updateUser} className={styles.form}>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" defaultValue={user?.name ?? ""} />
           <label htmlFor="bio">Bio</label>
